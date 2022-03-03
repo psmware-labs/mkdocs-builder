@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  mkdocs-builder:
+    image: mkdocs-builder
+    container_name: mkdocs-builder
+    hostname: mkdocs-builder
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
